@@ -8,49 +8,36 @@ html {
 }
 
 .cardGroup {
-  max-width: 320px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
+  align-content: center;
   justify-content: center;
-  witdh: 95vw;
-  max-width: 1180px;
-  margin: 10% 30% 30% 30%;
+  margin: 15% 35% 15% 35%;
+  min-width: 150px;
   border: 1px solid #CAD0D2;
   border-radius: 2px;
-  overflow: hidden;
-  align-content: center;
-
 }
 
 .cardGroup__card {
-
-    border: none;
     border-radius: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: auto;
-    
-} 
-
-.cardGroup__card {
     border-left: 1px solid #D7DBDD;
-
+    height: 135px;    
 }
 
 .cardGroup__cardDescription {
-
+    margin: 0 auto;
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: auto;
+    flex-basis: 1;
 }
 
 .icon {
-  color: #BCD2DA;}
+  color: #BCD2DA;
+}
 
 .card {
-
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
@@ -59,74 +46,58 @@ html {
 }
 
 .card__description {
-
     padding: 15px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-itens: center;
+    padding: 10px;
 }
 
-.card__descriptionIcon {font-size: 32px; margin-bottom: 10px;}
-
+.card__descriptionIcon {
+  font-size: 32px; margin-bottom: 10px;
+}
 
 .card__descriptionText {
-
     color: #57727C;
     font-size: 12px;
     text-align: center;
-    max-width: calc(100% - 30px);
+
 }
 
 .card__price {
-
     color: #57727C;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 900;
     padding: 5px 15px;
     border-top: 1px solid #D7DBDD;
     background-color: #EEF3F5;
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 700px){
   .cardGroup {
+    display: flex;
     flex-direction: row;
-    max-width: 710px;
-    margin: 100px;
-    height: 150px;
-    border:fit-content;
+    flex-wrap: wrap;
+    width: 500px;
+    margin: 15% 35% 15% 25%;
   }
-
-  * {
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-  
-
-  }
-
   .card__descriptionText {
     padding: 10px;
-
+    
   }
 
-}
   .cardGroup__card {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
-    width: 220px;
-
-  
-  }
-
-  .cardGroup__cardDescription{
-    position: relative;
- 
+    width: 100px;
+    height: 170px;
   }
 
   .card__price {
     display: flex;
-    margin-bottom: 0;
+    justify-content: center;
+
   }
 }
